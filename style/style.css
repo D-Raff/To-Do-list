@@ -9,6 +9,65 @@
 body{
     display: flex;
     justify-content: center;
+    align-items: center;
     height: 100vh;
     width: 100vw;
+}
+
+.card{
+    border: 3px solid black;
+    height: 30em;
+    width: 30em;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+    background: lightblue;
+    align-items: center;
+    border-radius: 20px;
+}
+
+input[data-input]{
+    border-radius: 20px;
+    padding: 3px;
+    width: 30em;
+    /* position: relative; */
+    /* top: 3em; */
+}
+
+button[data-add]{
+    width: 10em;
+    border-radius: 10px;
+    /* position: relative; */
+    /* top: 5em; */
+}
+.task{
+    list-style: none;
+    width: 100%;
+    border: 3px solid blue;
+    display: flex;
+    justify-content: space-between;
+}
+button[data-del]{
+    color: aqua;
+    width: 3em;
+    height: 30px;
+    background: red;
+    border: none;
+}
+#taskList{
+    border: 3px solid black;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+@media screen and (max-width:320px) {
+    .card{
+        height: 100%;
+        width: 100%;
+    }
 }
